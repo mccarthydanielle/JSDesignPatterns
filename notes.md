@@ -107,11 +107,43 @@
 - Flyweights share data across objects so we only do it ONCE. Kind of like adding functions to prototypes.
 - Results in smaller memory footprint
 - Only useful if you have large #s of objects, this will not do a lot of good because there is some overhead to implementing this pattern.
-- Least likely to be used but when you need it, you need it. You need w/ large datasets 
-
-#### Structural Design Patterns Summary
+- Least likely to be used but when you need it, you need it. You need w/ large datasets
 
 # Behavorial Patterns
+
+#### Observer Pattern
+
+- Allows a collection of objects to watch an object and be notified of changes
+- Allows for loosely coupled system
+- One object is the focal point
+- Group of objects watch for objects
+- Example
+  - There are observers and the subject. The observers listen for changes in the subject.
+    - Observers
+      - logging
+      - notification
+      - auditing
+    - Subject
+      - Task
+
+#### Mediator Pattern
+
+- Object that controls communication between objects so neither object has to be coupled to the others.
+- Allows for loosely coupled system
+- One object manages all communication
+- Many to many relationship
+
+#### Command Pattern
+
+- Encapsulates the calling of a method as an object
+- You would do this because it allows you to fully decouple the execution from the implementation
+- Allows for less fragile implementation
+- Support undo operation
+- Supports auditing and logging of operations
+
+#### Behavorial Design Patterns Summary
+
+-
 
 TODO
 show all ways to create constructor / prototypes (old and new)
